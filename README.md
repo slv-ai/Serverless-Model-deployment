@@ -1,2 +1,9 @@
 # Serverless-Model-deployment
 Model deployment with AWS Lambda serverless
+
+1. turn the starter notebook into script using:
+```
+jupyter nbconvert --to=script starter.ipynb
+mv starter.py train.py
+```
+2. 
