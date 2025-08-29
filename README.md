@@ -10,4 +10,10 @@ mv starter.py train.py
 ```
 pip install requests fastapi uvicorn
 ```
-3. 
+3. run python predict.py
+FastAPI generates OpenAPI docs automatically at /docs
+```
+http://localhost:9696/docs
+```
+input and output validation in fastapi
+4. 
