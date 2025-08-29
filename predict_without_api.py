@@ -1,5 +1,6 @@
-import requests
-url='http://localhost:9696/predict'
+import pickle
+with open("model.bin",'rb') as f_in:
+    pipeline=pickle.load(f_in)
 testdata = {
     'gender': 'female',
     'seniorcitizen': 0,
@@ -21,12 +22,5 @@ testdata = {
     'monthlycharges': 29.85,
     'totalcharges': 29.85
 }
-
-response=requests.post(url,json=testdata)
-predictions=response.json()
-print(predictions)
-if predictions['churn']:
-    print("customer is likely to churn")
-else:
-    print("customer is not likely to churn")
-
+result = pipeline.predict_proba(testdata)[0,1]
+print(result)

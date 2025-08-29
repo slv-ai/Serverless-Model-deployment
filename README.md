@@ -6,4 +6,8 @@ Model deployment with AWS Lambda serverless
 jupyter nbconvert --to=script starter.ipynb
 mv starter.py train.py
 ```
-2. 
+2. install dependencies
+```
+pip install requests fastapi uvicorn
+```
+3. 
