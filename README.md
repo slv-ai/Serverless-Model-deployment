@@ -41,10 +41,12 @@ if a project already uses uv then install all the dependencies using the sync co
 ```
 uv sync
 ```
-5.create Docker file
+5. create Docker file
 ```
 docker build -t churnpredict .
 ```
-'''
+```
 docker run -it --rm -p 9696:9696 churnpredict
+```
+6. deployment with lambda and ecr
 
