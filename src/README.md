@@ -1,5 +1,4 @@
-# Serverless-Model-deployment
-Model deployment with AWS Lambda serverless
+# Model deployment with FASTAPI AND UV
 
 1. turn the starter notebook into script using:
 ```
