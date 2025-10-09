@@ -1,6 +1,6 @@
 import boto3
 import json
-lambda_client = boto3.client('lambda')
+lambda_client = boto3.client('lambda', region_name='us-east-1')
 customer_data =  {
   "customer": {
     "gender": "female",
